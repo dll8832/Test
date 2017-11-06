@@ -36,6 +36,12 @@ public class AssertUtil {
 		}
 		
 	}
+	public static void isTrue(boolean b, String string) {
+		if (b) {
+			throw new ParamException(loadMsg(string));
+		}
+		
+	}
 
 
 

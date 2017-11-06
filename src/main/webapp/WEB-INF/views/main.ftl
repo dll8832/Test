@@ -52,7 +52,7 @@
             <a href="javascript:openTab('产品信息查询','${ctx}/product/index','icon-cpxxgl')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-cpxxgl'" style="width: 150px;">产品信息查询</a>
         </div>
         <div title="系统管理"  data-options="iconCls:'icon-item'" style="padding:10px">
-            <a href="javascript:openTab('用户管理','${ctx}/user/index','icon-user')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-user'" style="width: 150px;">用户管理</a>
+            <a href="javascript:openTab('用户管理','${ctx}/module/inde','icon-user')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-user'" style="width: 150px;">用户管理</a>
             <a href="javascript:openTab('角色管理','${ctx}/role/index','icon-user')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-user'" style="width: 150px;">角色管理</a>
             <a href="javascript:openTab('模块管理','${ctx}/module/index','icon-user')" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-user'" style="width: 150px;">模块管理</a>
             <a href="javascript:openPasswordModifyDialog()" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-modifyPassword'" style="width: 150px;">修改密码</a>

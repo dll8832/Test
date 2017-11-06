@@ -6,7 +6,9 @@ import org.apache.ibatis.jdbc.SQL;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.shsxt.crm.base.BaseQuery;
 import com.shsxt.crm.dto.SaleChanceQuery;
+import com.shsxt.crm.util.AssertUtil;
 
 public class SelectSql{
 	
@@ -40,6 +42,19 @@ public class SelectSql{
 		return sql;
 		
 		
+	}
+	
+	//模块权限管理分页查询。。
+	public String selectForPageModule(final BaseQuery query){
+		
+		String  str=new SQL(){	{
+		
+			SELECT 	(" id, module_name, module_style, url, parent_id, grade, orders, tree_path,"
+			      + " create_date, update_date, is_valid, opt_value");
+			FROM("t_module");
+			WHERE("  is_valid = 1");
+		}}.toString();
+		return str;
 	}
 	
 	/**
